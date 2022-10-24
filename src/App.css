@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    background: rgb(58, 119, 225);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper {
+    background-color: rgba(30, 3, 126, 0.538);
+    width: 460px;
+    height: 66opx;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 4px 7px 41px rgb(0, 0, 0);
+    margin-bottom: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h1 {
+    color: rgb(252, 178, 82);
+    text-align: center;
+    margin: 35px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input {
+    outline: none;
+    width: 250px;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: rgb(252, 178, 82);
+    background-color: rgb(8, 8, 129);
+    border: 1px solid rgb(118, 69, 6);
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-add{
+    width: 70px;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color:rgb(149, 118, 77);
+    cursor: pointer;
+}
+
+.list-item {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid rgb(92, 70, 5);
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 30px;
+}
+
+.button-complete {
+    color: rgb(252, 178, 82);
+    margin-right: 10px;
+}
+
+.button-delete{
+    color: rgb(16, 58, 104);
+}
+
+.button-edit {
+    color: rgb(92, 175, 88);
+    margin-right: 10px;
+}
+.complete {
+    text-decoration-style:solid;
+    text-decoration-line: line-through;
+    text-decoration-color:rgb(252, 178, 82); 
+    opacity: 0.6;
+}
+
+.list {
+    width: 20px;
+    background-color: rgb(5, 31, 98);
+    border: none;
+    color: azure;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+input: focus,
+button: focus {
+    outline: none;
 }
