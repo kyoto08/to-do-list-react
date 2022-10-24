@@ -81,9 +81,10 @@
 }
 
 .list {
-    width: 20px;
-    background-color: rgb(5, 31, 98);
+    width: 350px;
+    background-color: rgb(8, 8, 129);
     border: none;
+    border-radius: 5px;
     color: azure;
     font-size: 20px;
     padding-left: 10px;
