@@ -10,6 +10,7 @@
     top: 6px;
 }
 
+
 .add-btn {
     background-color: rgba(143, 236, 43, 0.61);
     cursor: pointer;
@@ -19,6 +20,16 @@
     left: 10px;
     top:6px
 }   
+
+.done-btn {
+    background-color: rgba(143, 236, 43, 0.61);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    left: 10px;
+    top:6px
+}
 
 h1 {
     color: rgb(0, 0, 0);

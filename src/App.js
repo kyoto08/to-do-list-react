@@ -23,6 +23,7 @@ function App() {
                 <h1>To Do List</h1>
                 <input
                 className="input"
+                placeholder="Anything to do?"
                 type="text"
                 value={input}
                 onChange = {(e) => setInput(e.target.value)}
@@ -32,7 +33,7 @@ function App() {
                     {list.map((todo) => (
                         <li key={todo.id}>
                             {todo.todo}
-                            <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+                            <button className = "done-btn" onClick={() => deleteTodo(todo.id)}>Done</button>
                         </li>
                     ))}
                 </ul>
