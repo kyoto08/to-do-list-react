@@ -22,16 +22,18 @@ function App() {
     return (<div>
                 <h1>To Do List</h1>
                 <input
+                className="input"
+                placeholder="Anything to do?"
                 type="text"
                 value={input}
                 onChange = {(e) => setInput(e.target.value)}
                 />
-                <button onClick={() => addTodo(input)}>Add Task</button>
+                <button className="add-btn" onClick={() => addTodo(input)}>Add Task</button>
                 <ul>
                     {list.map((todo) => (
                         <li key={todo.id}>
                             {todo.todo}
-                            <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+                            <button className = "done-btn" onClick={() => deleteTodo(todo.id)}>Done</button>
                         </li>
                     ))}
                 </ul>
